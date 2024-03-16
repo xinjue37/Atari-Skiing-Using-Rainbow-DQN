@@ -24,3 +24,19 @@ The formulation of the RL problem involves defining the state space, action spac
 | 2     | LEFT    |
 
 * The reward is always -1 if the agent does not reach the goal state, and ~ -450 penalty given at the end of the game if the agent does not pass a flag in the game. In the game, there is total of 20 pair of flags. For example, if the agent does not pass 10 pairs of flag in an episode, -4500 penalty will only be given at the end of the game
+
+## Experiment Design
+* First, the selection of the Deep Learning Model will be the Rainbow DQN and it is the same for the __Pong__ environment. The only difference is that in this case we are dealing with an image, so some convolutional layers are added in the beginning of neural network to extract the features from the images. The model architecture is shown below:
+
+    <img src="Image/DQN_Skiing.png" width=600px>
+
+* Secondly, to facilitate faster training speed of Rainbow DQN, a __Heuristic Agent__ that does not have the optimal action, but can pass all the flags in each games is built to guide the training of the Rainbow DQN. The pseudocode of sampling an episode for training is as follows, with 80% probability that the action is sampled by the heuristic agent, 10% probability for a random policy to facilitate exploration, and 10% based on the action of DQN to facilitate exploitation. The policy used to select actions from DQN is based on the softmax policy.
+```
+if rand_value < 0.8:   # Sample action from heuristic agent
+    action = heuristic_agent.get_action(raw_obs)
+elif rand_value < 0.9: # Sample action from DQN
+    action          = dqn.act(state)[0] # Choose an action greedily (with noisy weights)         
+else:                  # Sample action from random policy
+    action = random.randint(0,2)
+```
+* At each 50000 steps of training, a checkpoint will be saved for further analysis. After sufficient training, 5 models with difference stages are chosen to investigate the effectiveness of the learning process. The key metrics considered for evaluation of effectiveness are the __average number of time steps taken to finish a game for n episodes__, and the __average accumulated rewards achieved for n episodes__. In our case, n is set to be 10.
