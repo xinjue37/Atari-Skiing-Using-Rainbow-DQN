@@ -1,0 +1,18 @@
+pip install setuptools==65.5.0
+pip install pandas
+pip install numpy
+pip install wheel==0.38.0
+pip install gym==0.21.0
+pip install pyglet==1.5.24
+pip install tqdm
+pip install opencv-python==4.6.0.66
+pip install gym-retro
+pip install torch-summary
+
+
+# Torch with cuda (Make sure to check the cuda version by nvidia-smi)
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+
+# For Skiing env, need 2 extra library
+!pip install gym[atari]
+!pip install autorom[accept-rom-license]
