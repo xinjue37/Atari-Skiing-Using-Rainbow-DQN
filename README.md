@@ -3,7 +3,7 @@ Author: Ng Zheng Jue, Ng Rui Qi, Ong Ming Jie, Tan Hong Guan
 
 * This is a project developed in undergraduate Year 3 - Semester 2
 * This repository consists of solving a control movement problem using Deep Reinforcement Learning. The deep learning architecture used is Rainbow DQN (Deep Q network) as we are dealing with the deterministic action
-* At the same time, we analyze the effect of applying imitation learning in the Atari Skiing problem, the demonstration can be shown at [youtube]
+* At the same time, we analyze the effect of applying imitation learning in the Atari Skiing problem, the demonstration can be shown at [youtube](https://youtu.be/9t5emH0xPSo)
 * This repository consists of
   * 1 Jupyter Notebook file [skiing.ipynb](https://github.com/xinjue37/Undergraduate-Y3S2-Atari-Skiing-Using-Deep-Q-Network-Rainbow/blob/main/skiing.ipynb) that consists of overall experimental design, development of method including training and evaluating the deep learning model and lastly the overall conclusion of the result obtained.
   * 3 python file ([model.py](https://github.com/xinjue37/Undergraduate-Y3S2-Atari-Skiing-Using-Deep-Q-Network-Rainbow/blob/main/model.py), [memory.py](https://github.com/xinjue37/Undergraduate-Y3S2-Atari-Skiing-Using-Deep-Q-Network-Rainbow/blob/main/memory.py), [agent.py](https://github.com/xinjue37/Undergraduate-Y3S2-Atari-Skiing-Using-Deep-Q-Network-Rainbow/blob/main/agent.py))
