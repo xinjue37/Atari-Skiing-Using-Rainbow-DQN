@@ -1,4 +1,4 @@
-# Undergraduate-Y3S2-Atari-Skiing-Using-Deep-Q-Network-Rainbow
+# Undergraduate-Y3S2-Atari-Skiing-Using-Rainbow-DQN
 Author: Ng Zheng Jue, Ng Rui Qi, Ong Ming Jie, Tan Hong Guan
 
 * This is a project developed in undergraduate Year 3 - Semester 2
