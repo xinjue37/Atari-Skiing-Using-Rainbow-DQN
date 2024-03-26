@@ -1,4 +1,4 @@
-# Undergraduate-Y3S2-Atari-Skiing-Using-Rainbow-DQN
+# Atari-Skiing-Using-Rainbow-DQN
 Author: [Ng Zheng Jue](https://github.com/xinjue37), [Ng Rui Qi](https://github.com/Ruiqi2002), [Ong Ming Jie](https://github.com/ethanong98), Tan Hong Guan
 
 * This is a project developed in undergraduate Year 3 - Semester 2
