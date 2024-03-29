@@ -35,14 +35,14 @@ The formulation of the RL problem involves defining the state space, action spac
 
 <div align="center"
  
-    |No|Improvement|Description|Benifits|
-    |:-:|:--|:--|:--|
-    |1|Double Q-learning|Use current Q to select action and old Q to evaluate the action|To solve the maximization bias problem|
-    |2|Prioritized Experienced Replay|Reorder the order of the sample to update Q |To increase the training speed|
-    |3|Dueling Networks|Output Advantage function and value function to form the final Q value|To help quickly identify good action|
-    |4|Multi-step learning|Use multiple step rewards to update the Q value in Deep neural network|To solve the problem where some individual actions do not have immediate reward|
-    |5|Distribution RL|Instead of outputting Q, output distribution of return (mean and std) |To yield better results in the noisy and stochastic environment|
-    |6|Noisy Exploration Layer|Add some random noise to the Linear Layer |To favor more exploration|
+|No|Improvement|Description|Benifits|
+|:-:|:--|:--|:--|
+|1|Double Q-learning|Use current Q to select action and old Q to evaluate the action|To solve the maximization bias problem|
+|2|Prioritized Experienced Replay|Reorder the order of the sample to update Q |To increase the training speed|
+|3|Dueling Networks|Output Advantage function and value function to form the final Q value|To help quickly identify good action|
+|4|Multi-step learning|Use multiple step rewards to update the Q value in Deep neural network|To solve the problem where some individual actions do not have immediate reward|
+|5|Distribution RL|Instead of outputting Q, output distribution of return (mean and std) |To yield better results in the noisy and stochastic environment|
+|6|Noisy Exploration Layer|Add some random noise to the Linear Layer |To favor more exploration|
 
 </div>
 
