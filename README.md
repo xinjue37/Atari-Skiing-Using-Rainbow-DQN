@@ -18,17 +18,23 @@ The formulation of the RL problem involves defining the state space, action spac
 
 * The agent has 3 possible actions and it can perform 1 action at each step, $a_t$. Since the action is discrete, the selection for DNN will be DQN as only single forward pass is needed to obtain an action. The action value and its corresponding meaning is as follows:
 
+<div align="center"
+
 | Value | Meaning |
 |:-:|:-:|
 | 0     | NOOP    |
 | 1     | RIGHT   |
 | 2     | LEFT    |
 
+</div>
+
 * The reward is always -1 if the agent does not reach the goal state, and ~ -450 penalty given at the end of the game if the agent does not pass a flag in the game. In the game, there is total of 20 pair of flags. For example, if the agent does not pass 10 pairs of flag in an episode, -4500 penalty will only be given at the end of the game
 
 ## Experiment Design
 * The selection of the Deep Learning Model will be the Rainbow DQN, which follows the implementation in the [Github](https://github.com/Kaixhin/Rainbow). For the Rainbow DQN, it implemented 6 improvements from the original Deep Q-learning:
 
+<div align="center"
+ 
     |No|Improvement|Description|Benifits|
     |:-:|:--|:--|:--|
     |1|Double Q-learning|Use current Q to select action and old Q to evaluate the action|To solve the maximization bias problem|
@@ -37,6 +43,8 @@ The formulation of the RL problem involves defining the state space, action spac
     |4|Multi-step learning|Use multiple step rewards to update the Q value in Deep neural network|To solve the problem where some individual actions do not have immediate reward|
     |5|Distribution RL|Instead of outputting Q, output distribution of return (mean and std) |To yield better results in the noisy and stochastic environment|
     |6|Noisy Exploration Layer|Add some random noise to the Linear Layer |To favor more exploration|
+
+</div>
 
 * The neural network architecture used is as followed:
 
