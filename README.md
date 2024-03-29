@@ -18,7 +18,7 @@ The formulation of the RL problem involves defining the state space, action spac
 
 * The agent has 3 possible actions and it can perform 1 action at each step, $a_t$. Since the action is discrete, the selection for DNN will be DQN as only single forward pass is needed to obtain an action. The action value and its corresponding meaning is as follows:
 
-<div align="center"
+<div align="center">
 
 | Value | Meaning |
 |:-:|:-:|
@@ -33,7 +33,7 @@ The formulation of the RL problem involves defining the state space, action spac
 ## Experiment Design
 * The selection of the Deep Learning Model will be the Rainbow DQN, which follows the implementation in the [Github](https://github.com/Kaixhin/Rainbow). For the Rainbow DQN, it implemented 6 improvements from the original Deep Q-learning:
 
-<div align="center"
+<div align="center">
  
 |No|Improvement|Description|Benifits|
 |:-:|:--|:--|:--|
